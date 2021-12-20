@@ -10,7 +10,7 @@ html{background-color: turquoise;}
     box-sizing: border-box;
 }
 #helpbutton{
-    /* position: absolute; */
+    
     left: 1.5vw;
     
 }
@@ -76,6 +76,7 @@ html{background-color: turquoise;}
     font-weight: bold;
     margin-top: 5px;
     border:gray solid thin;
+    display:none;
     
 }
 

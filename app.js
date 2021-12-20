@@ -10,7 +10,7 @@ const buttonClik = document.getElementById("clik");
 const buttonHold = document.getElementById("hold");
 const buttonReset = document.getElementById("reset");
 const buttonRounds = document.getElementById("submit");
-
+const x = document.getElementById("header");
 
 buttonClik.addEventListener("click", () => {
   let random = (Math.floor(Math.random() * 6) + 1);
@@ -261,7 +261,7 @@ buttonRounds.addEventListener("click", () => {
 }
 )
 function help() {
-  var x = document.getElementById("header");
+  
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
