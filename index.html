@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice-Game-2-Players</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+<header class="header">
+    <p>Player 1: roll the dice. Each time you roll, your total is added up. If you manage to score 20 or more you win, but
+        if you roll a 1, your score is 0 and Player 2 plays! If you are satisfied with your score, press hold to pass to Player 2.
+         Player 2: you must now try and score 20, but if you throw a 1, your score is 0 and play goes back to Player 1. First player to win chosen number (choose between 1 and 20) of rounds wins! Otherwise defaults to 4.
+         </p>
+</header>
+<main class="main">
+<section class="player1">
+    <h2>PLAYER 1</h2>
+    <div id="tally1" class="box">
+        <h1></h1>
+    </div>
+    <div id="score1" class="box">
+        <h1></h1>
+    </div>
+    <div id="status1" class="box status">
+        <h1> </h1>
+    </div>
+    
+
+</section>
+
+<section class="dice">
+
+
+    <div class="chooserounds">
+     <div id="outputRounds">   <p>Choose number of rounds:</p></div>
+        <div class="form">
+    <input id="inputRounds" type="text">
+    <button id="submit" class="smallbutton">Submit</button>
+</div>
+    
+    </div>
+
+
+    <div id="dice" >
+        <img alt="diceface" id="diceF">
+</div>
+<button id="hold" class="button">
+    Hold
+</button>
+<button id="clik"class="button" >
+    Start
+</button>
+<button id="reset" class="button">Reset</button>
+</section>
+
+<section class="player2">
+    <h2>PLAYER 2</h2>
+    <div id="tally2" class="box">
+        <h1></h1>
+    </div>
+    <div id="score2" class="box" >
+        <h1></h1>
+    </div>
+    <div id="status2" class="box status">
+        <h1> </h1>
+    </div>    
+
+</section>
+</main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

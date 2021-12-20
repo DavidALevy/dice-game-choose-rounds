@@ -1,0 +1,128 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.body {
+    box-sizing: border-box;
+}
+
+.player1,.player2,.dice {
+    display: flex;
+    flex-direction: column;
+}
+
+#inputRounds {
+    width: 2vw;
+    height: 3vh
+}
+
+#outputRounds {
+    margin-right: 10px
+}
+
+.chooserounds {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vh;
+}
+
+.smallbutton {
+    height: 3vh;
+    margin-left: 1vw;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3.5vh;
+    padding-top: 1.5vh;
+}
+
+.chooserounds p {
+    font-size: smaller;
+    margin-top: 3vh;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1.7vh;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: fit-content;
+    height: auto;
+    font-size: 2vw;
+}
+
+.header {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    justify-content: center;
+    font-size: 1.4vw;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.player1,
+.player2 {
+    align-items: center;
+}
+
+.box {
+    height: 10vh;
+    font-size: 2vw;
+    display: flex;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+
+.status {
+    border-bottom: solid;
+}
+
+.dice {
+    margin-right: 3vw;
+    margin-left: 3vw;
+
+    display: flex;
+}
+
+#dice {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+#diceF {
+    display: none;
+    height: 18vh;
+}
+
+.button {
+    height: 10vh;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 20vw;
+}
