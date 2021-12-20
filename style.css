@@ -1,3 +1,4 @@
+html{background-color: turquoise;}
 .main {
     display: flex;
     flex-direction: row;
@@ -8,7 +9,11 @@
 .body {
     box-sizing: border-box;
 }
-
+#helpbutton{
+    /* position: absolute; */
+    left: 1.5vw;
+    
+}
 .player1,.player2,.dice {
     display: flex;
     flex-direction: column;
@@ -61,13 +66,17 @@
     font-size: 2vw;
 }
 
-.header {
+#header {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     padding-right: 1vw;
     padding-left: 1vw;
     justify-content: center;
-    font-size: 1.4vw;
+    font-size: 1vw;
+    font-weight: bold;
+    margin-top: 5px;
+    border:gray solid thin;
+    
 }
 
 h1 {
@@ -89,8 +98,10 @@ h1 {
     width: 20vw;
     justify-content: center;
     align-items: center;
-    padding: 1vw;
+    padding: 1vw;    
 }
+.box1{background-color: violet;}
+.box2{background-color: yellow;}
 
 .status {
     border-bottom: solid;

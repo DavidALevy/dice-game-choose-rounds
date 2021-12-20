@@ -29,8 +29,10 @@ buttonClik.addEventListener("click", () => {
       document.getElementById('score2').innerHTML = ('score: 0');
       document.getElementById('clik').innerHTML = ('Roll');
       document.getElementById('status1').innerHTML = ('You start!');
+      document.getElementById('status1').style.backgroundColor = ('');
       document.getElementById('status2').innerHTML = ('');
-      document.getElementById('status2').innerHTML = ('');
+      document.getElementById('status2').style.backgroundColor = ('');
+      
       clickCount++;
       scoreCount1 = 0;
       scoreCount2 = 0;
@@ -56,6 +58,8 @@ buttonClik.addEventListener("click", () => {
       if (tally1 + tally2 < rounds) {
         document.getElementById('clik').innerHTML = ('Click here to play again');
         document.getElementById('status1').innerHTML = ('You win!');
+        document.getElementById('status1').style.backgroundColor = ('springgreen');
+
 
         holdCount = 0;
         return;
@@ -64,6 +68,7 @@ buttonClik.addEventListener("click", () => {
       else if (tally1 > tally2) {
         document.getElementById('clik').innerHTML = ('Click here to restart');
         document.getElementById('status1').innerHTML = ('YOU ARE GRAND CHAMPION!');
+        document.getElementById('status1').style.backgroundColor = ('chartreuse');
         holdCount = 0;
         tally1 = 0;
         tally2 = 0;
@@ -72,6 +77,7 @@ buttonClik.addEventListener("click", () => {
       else if (tally2 > tally1) {
         document.getElementById('clik').innerHTML = ('Click here to restart');
         document.getElementById('status2').innerHTML = ('YOU ARE GRAND CHAMPION!');
+        document.getElementById('status2').style.backgroundColor = ('chartreuse');
         holdCount = 0;
         tally1 = 0;
         tally2 = 0;
@@ -81,6 +87,8 @@ buttonClik.addEventListener("click", () => {
         document.getElementById('clik').innerHTML = ('Click here to restart');
         document.getElementById('status1').innerHTML = ('DRAW');
         document.getElementById('status2').innerHTML = ('DRAW');
+        document.getElementById('status1').style.backgroundColor = ('lightblue');
+        document.getElementById('status2').style.backgroundColor = ('lightblue');
         holdCount = 0;
         tally1 = 0;
         tally2 = 0;
@@ -120,7 +128,9 @@ buttonClik.addEventListener("click", () => {
       document.getElementById('score2').innerHTML = ('score: 0');
       document.getElementById('clik').innerHTML = ('Roll');
       document.getElementById('status2').innerHTML = ('You start!');
+      document.getElementById('status2').style.backgroundColor = ('');
       document.getElementById('status1').innerHTML = ('');
+      document.getElementById('status1').style.backgroundColor = ('');
       clickCount++;
       scoreCount1 = 0;
       scoreCount2 = 0;
@@ -139,6 +149,7 @@ buttonClik.addEventListener("click", () => {
 
       if (tally1 + tally2 < rounds) {
         document.getElementById('status2').innerHTML = ('You win!');
+        document.getElementById('status2').style.backgroundColor = ('springgreen');
         document.getElementById('clik').innerHTML = ('Click here to play again');
         holdCount = 1;
         return;
@@ -147,6 +158,8 @@ buttonClik.addEventListener("click", () => {
       else if (tally1 > tally2) {
         document.getElementById('clik').innerHTML = ('Click here to restart');
         document.getElementById('status1').innerHTML = ('YOU ARE GRAND CHAMPION!');
+        document.getElementById('status1').style.backgroundColor = ('chartreuse');
+      
         holdCount = 0;
         tally1 = 0;
         tally2 = 0;
@@ -155,6 +168,7 @@ buttonClik.addEventListener("click", () => {
       else if (tally2 > tally1) {
         document.getElementById('clik').innerHTML = ('Click here to restart');
         document.getElementById('status2').innerHTML = ('YOU ARE GRAND CHAMPION!');
+        document.getElementById('status2').style.backgroundColor = ('chartreuse');
         holdCount = 0;
         tally1 = 0;
         tally2 = 0;
@@ -164,6 +178,8 @@ buttonClik.addEventListener("click", () => {
         document.getElementById('clik').innerHTML = ('Click here to restart');
         document.getElementById('status1').innerHTML = ('DRAW');
         document.getElementById('status2').innerHTML = ('DRAW');
+        document.getElementById('status1').style.backgroundColor = ('lightblue');
+        document.getElementById('status2').style.backgroundColor = ('lightblue');
         holdCount = 0;
         tally1 = 0;
         tally2 = 0;
@@ -241,6 +257,14 @@ buttonRounds.addEventListener("click", () => {
     document.getElementById('outputRounds').innerHTML = (`Number of rounds: ${rounds}`);
   }
 
-  return;
+  
 }
 )
+function help() {
+  var x = document.getElementById("header");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
